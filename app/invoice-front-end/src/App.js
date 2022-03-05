@@ -1,5 +1,8 @@
+import ClientDetails from "./components/ClientDetails";
+import Dates from "./components/Dates";
 import Footer from "./components/Footer";
 import Notes from "./components/Notes";
+import Table from "./components/Table";
 
 
 function App() {
@@ -35,33 +38,16 @@ function App() {
       {/* FCF details */}
       <section className="flex flex-col items-end justify-end">
         <h2 className="text-xl uppercase">Fillmore Country Floral</h2>
-        <p>Your Address</p>
+        <p>280 W 500 S</p>
+        <p>Fillmore, UT 84631</p>
       </section>
       {/* End of your details */}
 
-      {/* Client Details */}
-      <section className="mt-5">
-        <h2 className="text-xl uppercase">Client's Name</h2>
-        <p>Client's Address</p>
-      </section>
-      {/* End Client Details */}
+      <ClientDetails />
 
-      {/* Dates */}
-      <article className="my-5 flex items-end justify-end">
-        <ul>
-          <li><span className="font-bold">Invoice Number:</span></li>
-          <li><span className="font-bold">Invoice Date:</span></li>      
-          <li><span className="font-bold">Due Date:</span></li>      
-        </ul>
-      </article>
-      {/* End of Dates */}
+      <Dates />
 
-
-      {/* Table */}
-      <div className="my-5">
-        This is the table
-      </div>
-      {/* End of Table */}
+      <Table />
     
       <Notes />
     
