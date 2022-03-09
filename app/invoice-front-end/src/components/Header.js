@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Header() {
+export default function Header({handlePrint}) {
   return (
     <>
         <header className="flex flex-col items-center justify-center mb-5 xl:flex-row xl:justify-between">
